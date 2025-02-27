@@ -18,6 +18,7 @@ axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
   
   const emailOne = document.createElement('li')
   emailOne.textContent = randomEmail
+  emailOne.classList.add('list-group-item')
   
   emailListEl.appendChild(emailOne)
 
@@ -32,6 +33,8 @@ axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
   
   const emailOne = document.createElement('li')
   emailOne.textContent = randomEmail
+  emailOne.classList.add('list-group-item')
+
   
   emailListEl.appendChild(emailOne)
 
@@ -46,6 +49,8 @@ axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
   
   const emailOne = document.createElement('li')
   emailOne.textContent = randomEmail
+  emailOne.classList.add('list-group-item')
+
   
   emailListEl.appendChild(emailOne)
 
@@ -60,6 +65,8 @@ axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
   
   const emailOne = document.createElement('li')
   emailOne.textContent = randomEmail
+  emailOne.classList.add('list-group-item')
+
   
   emailListEl.appendChild(emailOne)
 
@@ -74,37 +81,8 @@ fetch('https://flynn.boolean.careers/exercises/api/random/mail')
   
   const emailOne = document.createElement('li')
   emailOne.textContent = randomEmail
-  
-  emailListEl.appendChild(emailOne)
+  emailOne.classList.add('list-group-item')
 
-
-})
-
-
-fetch('https://flynn.boolean.careers/exercises/api/random/mail')
-.then(response => response.json())
-.then(data => {
-  console.log(data.response);
-
-  const randomEmail = data.response
-  
-  const emailOne = document.createElement('li')
-  emailOne.textContent = randomEmail
-  
-  emailListEl.appendChild(emailOne)
-
-
-})
-
-fetch('https://flynn.boolean.careers/exercises/api/random/mail')
-.then(response => response.json())
-.then(data => {
-  console.log(data.response);
-
-  const randomEmail = data.response
-  
-  const emailOne = document.createElement('li')
-  emailOne.textContent = randomEmail
   
   emailListEl.appendChild(emailOne)
 
@@ -121,6 +99,25 @@ fetch('https://flynn.boolean.careers/exercises/api/random/mail')
   
   const emailOne = document.createElement('li')
   emailOne.textContent = randomEmail
+  emailOne.classList.add('list-group-item')
+
+  
+  emailListEl.appendChild(emailOne)
+
+
+})
+
+fetch('https://flynn.boolean.careers/exercises/api/random/mail')
+.then(response => response.json())
+.then(data => {
+  console.log(data.response);
+
+  const randomEmail = data.response
+  
+  const emailOne = document.createElement('li')
+  emailOne.textContent = randomEmail
+  emailOne.classList.add('list-group-item')
+
   
   emailListEl.appendChild(emailOne)
 
@@ -137,6 +134,8 @@ fetch('https://flynn.boolean.careers/exercises/api/random/mail')
   
   const emailOne = document.createElement('li')
   emailOne.textContent = randomEmail
+  emailOne.classList.add('list-group-item')
+
   
   emailListEl.appendChild(emailOne)
 
@@ -153,6 +152,26 @@ fetch('https://flynn.boolean.careers/exercises/api/random/mail')
   
   const emailOne = document.createElement('li')
   emailOne.textContent = randomEmail
+  emailOne.classList.add('list-group-item')
+
+  
+  emailListEl.appendChild(emailOne)
+
+
+})
+
+
+fetch('https://flynn.boolean.careers/exercises/api/random/mail')
+.then(response => response.json())
+.then(data => {
+  console.log(data.response);
+
+  const randomEmail = data.response
+  
+  const emailOne = document.createElement('li')
+  emailOne.textContent = randomEmail
+  emailOne.classList.add('list-group-item')
+
   
   emailListEl.appendChild(emailOne)
 
