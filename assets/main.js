@@ -7,6 +7,7 @@ const reloadEl = document.querySelector('.reload')
 // sostituiamo le email con nuove mail by fetch
 reloadEl.addEventListener('click', function() {
 
+  emailListEl.innerHTML = ''
   //add API with axios
 axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
 .then(function (response) {
