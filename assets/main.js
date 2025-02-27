@@ -8,10 +8,15 @@ axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
   console.log(randomEmail);
   
   
-  const newList = document.createElement('li')
-  newList.textContent = randomEmail
+  const emailOne = document.createElement('li')
+  emailOne.textContent = randomEmail
   
-  emailListEl.appendChild(newList)
+  emailListEl.appendChild(emailOne)
+
+  const emailTwo = document.createElement('li')
+  emailTwo.textContent = randomEmail
+  
+  emailListEl.appendChild(emailTwo)
 })
 
 
