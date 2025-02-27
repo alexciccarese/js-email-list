@@ -13,10 +13,20 @@ axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
   
   emailListEl.appendChild(emailOne)
 
-  const emailTwo = document.createElement('li')
-  emailTwo.textContent = randomEmail
+})
+
+axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
+.then(function (response) {
+  const randomEmail = response.data.response
+
+  console.log(randomEmail);
   
-  emailListEl.appendChild(emailTwo)
+  
+  const emailOne = document.createElement('li')
+  emailOne.textContent = randomEmail
+  
+  emailListEl.appendChild(emailOne)
+
 })
 
 
