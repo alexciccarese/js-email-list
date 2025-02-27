@@ -1,6 +1,13 @@
 const emailListEl = document.querySelector('.email_list')
+const reloadEl = document.querySelector('.reload')
 
-//add API with axios
+
+
+
+// sostituiamo le email con nuove mail by fetch
+reloadEl.addEventListener('click', function() {
+
+  //add API with axios
 axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
 .then(function (response) {
   const randomEmail = response.data.response
@@ -151,5 +158,4 @@ fetch('https://flynn.boolean.careers/exercises/api/random/mail')
 
 })
 
-
-
+})
